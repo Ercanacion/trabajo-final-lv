@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<title>Consulta de libros</title>
+</head>
+<body>
+<form action="guardar.php" method="post">
+	<fieldset>
+		<legend>Guarda datos</legend>
+		<select name="libre" required>
+			<option value="te1">Estante A</option>
+			<option value="te2">Estante B</option>
+			<option value="te3">Estante C</option>
+			<option value="te4">Estante D</option>
+		</select>
+		<input required type="text" name="MN">
+		<input required type="text" name="MS">
+		<label>Disponible</label>
+		<input required type="radio" value="true" name="MD"><label>Si</label>
+		<input required type="radio" value="false" name="MD"><label>No</label>
+		<br>
+		<input required type="submit" onclick="guarda();" name="" value="Guardar">
+	</fieldset>
+</form>
+
+
+
+
+<form>
+	<fieldset>
+		<legend>Imprime los Datos</legend>
+		<select>
+			<option value="TE1">Estante A</option>
+			<option value="TE2">Estante B</option>
+			<option value="TE3">Estante C</option>
+			<option value="TE4">Estante D</option>
+		</select>
+
+		<select required name="SD">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<label id="DN"></label>
+		<label id="DS"></label>
+		<label id="DD"></label>
+	</fieldset>
+
+</form>
+
+</body>
+</html>
